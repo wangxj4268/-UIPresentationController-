@@ -1,7 +1,8 @@
 ### 基于UIPresentationController的弹出框
 
 ```
-简介：UIPresentationController 是 iOS8 新增的一个 API，用来控制 controller 之间的跳转特效。比如希望实现一个特效，显示一个窗口，大小和位置都是自定义的，并且遮罩在原来的页面上。在之前，可以通过UIWindow上自定义view来实现
+简介：UIPresentationController 是 iOS8 新增的一个 API，用来控制 controller 之间的跳转特效。
+比如希望实现一个特效，显示一个自定义的视图，并且在控制器视图的上面。如果在之前我们可以通过在UIWindow上自定义view来实现，但是现在我们完全可以通过UIPresentationController来实现这种展示效果。
 ```
 [本Demo的Github地址](https://github.com/wangxj4268/-UIPresentationController-.git)
 
@@ -86,7 +87,7 @@
 
 
 #### 4.在需要展示弹框的控制器中调用第3步中编写的内容视图控制器ContentViewController，并实现UIViewControllerTransitioningDelegate
-
+![image](http://m.qpic.cn/psb?/V10Ra4TS1frb6f/7ZHisF7RFgKFAtzEcT.7D3tzyLDVHrDQutNQpn2XOTc!/b/dH4BAAAAAAAA&bo=6ARMAgAAAAADB4A!&rf=viewer_4)
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -127,4 +128,5 @@
 #### 5.展示效果
 ![image](http://m.qpic.cn/psb?/V10Ra4TS1frb6f/tlRc.WsFnBDINX9vSZzfQft4fDlFVlYqxc60997MTJA!/b/dA4AAAAAAAAA&bo=7gI2BQAAAAADB*0!&rf=viewer_4)
 
-参考CSDN大佬地址：https://blog.csdn.net/ideaspress/article/details/51177934
+参考CSDN大佬地址：
+https://blog.csdn.net/ideaspress/article/details/51177934
